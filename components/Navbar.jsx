@@ -31,7 +31,7 @@ const Navbar = () => {
           <ul
             className={`${
               toggleOpen
-                ? "bg-white/20 flex flex-col gap-3 w-full absolute h-screen top-0 left-0 justify-center items-center backdrop-blur-sm lg:hidden text-gray-900/60"
+                ? "bg-white/20 flex flex-col gap-3 w-full  h-screen top-0 left-0 justify-center items-center backdrop-blur-xl lg:hidden text-gray-900/60 z-[9999] fixed"
                 : "hidden lg:flex gap-8 text-gray-900/60"
             }`}
           >
@@ -74,7 +74,7 @@ const Navbar = () => {
             Sign in
           </Link>
 
-          <span className="z-[3]">
+          <span className="z-[3000]">
             <FiMenu
               onClick={handleToggle}
               className={`${
