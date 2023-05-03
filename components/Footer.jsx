@@ -8,65 +8,97 @@ import {
 
 const Footer = () => {
   return (
-    <footer className="text-gray-400 py-20 border-t border-gray-200">
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 pb-20 ps-10 lg:ps-0 w-full gap-16 md:gap-10 lg:gap-5 xl:gap-10 2xl:px-20 container mx-auto">
-        <div className="footer-col-1 flex flex-col items-start">
-          <Link
-            href="/"
-            className="text-2xl md:text-xl font-semibold text-green-500/80 hover:text-green-500/80 duration-300"
-          >
+    <footer className="text-gray-500 pt-20 px-4 sm:px-0">
+      <div className="container mx-auto grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8 border-b border-gray-400/50 pb-10">
+        <div className="footer-col-1 col-span-2 gap-3 sm:gap-5 flex flex-col">
+          <p className="text-xl text-gray-600 font-medium hover:text-green-500 duration-300">
             Divine-Beauty
+          </p>
+          <p>
+            Our beauty parlor offers exceptional services tailored to your
+            needs. Our skilled professionals use top-quality products and
+            techniques to deliver a unique and personalized experience.
+          </p>
+          <Link
+            href=""
+            className="text-rose-500 font-medium hover:text-rose-600 duration-300"
+          >
+            divinebeauty@gmail.com
           </Link>
         </div>
-        <div className="footer-col-2 flex flex-col items-start">
-          <p className="follow-text uppercase tracking-wider text-gray-500">{`Don't forget to follow us`}</p>
-          <div className="social-icons flex pt-5 gap-5">
-            <div className="icon-circle  w-7 rounded-full h-7 items-center justify-center flex bg-green-100">
-              <FaFacebookF className="text-green-500 mx-auto" />
-            </div>
-            <div className="icon-circle  w-7 rounded-full h-7 items-center justify-center flex bg-green-100">
-              <FaInstagram className="text-green-500 mx-auto" />
-            </div>
-            <div className="icon-circle  w-7 rounded-full h-7 items-center justify-center flex bg-green-100">
-              <FaLinkedinIn className="text-green-500 mx-auto" />
-            </div>
-            <div className="icon-circle  w-7 rounded-full h-7 items-center justify-center flex bg-green-100">
-              <FaTwitter className="text-green-500 mx-auto" />
-            </div>
-          </div>
+        <div className="footer-col-2 col-span-1 gap-1 sm:gap-3 flex flex-col">
+          <p className="text-lg text-gray-600 font-medium">About</p>
+          <Link href="" className="hover:text-green-500 duration-300">
+            About Us
+          </Link>
+          <Link href="" className="hover:text-green-500 duration-300">
+            Packages
+          </Link>
+          <Link href="" className="hover:text-green-500 duration-300">
+            Contact
+          </Link>
         </div>
-        <div className="footer-col-2 flex flex-col items-start">
-          <p className="uppercase font-medium text-green-500 tracking-wider">
-            Useful Links
-          </p>
-          <div className="nav-link flex flex-col-2 mt-3 gap-10 justify-start">
-            <div className="link-col-left flex flex-col text-left gap-1 uppercase">
-              <Link href="/" className="hover:text-green-500 duration-300">
-                Home
-              </Link>
-              <Link href="" className="hover:text-green-500 duration-300">
-                Packages
-              </Link>
 
-              <Link href="" className="hover:text-green-500 duration-300">
-                About
-              </Link>
+        <div className="footer-col-3 col-span-1 gap-1 sm:gap-3 flex flex-col">
+          <p className="text-lg text-gray-600 font-medium">Product</p>
+          <Link href="" className="hover:text-green-500 duration-300">
+            New arrival
+          </Link>
+          <Link href="" className="hover:text-green-500 duration-300">
+            Discount
+          </Link>
+          <Link href="" className="hover:text-green-500 duration-300">
+            Customize
+          </Link>
+        </div>
+        <div className="footer-col-4 col-span-1 gap-1 sm:gap-3 flex flex-col">
+          <p className="text-lg text-gray-600 font-medium">Company</p>
+          <Link href="" className="hover:text-green-500 duration-300">
+            Our team
+          </Link>
+          <Link href="" className="hover:text-green-500 duration-300">
+            Partner With Us
+          </Link>
+          <Link href="" className="hover:text-green-500 duration-300">
+            Blog
+          </Link>
+          <Link href="" className="hover:text-green-500 duration-300">
+            Article
+          </Link>
+        </div>
+        <div className="footer-col-5 col-span-1 gap-3 flex flex-col">
+          <p className="text-lg text-gray-600 font-medium">Social media</p>
+          <div className="social-links flex gap-3">
+            <div className="icon-circle  w-7 rounded-full h-7 items-center justify-center flex bg-gray-200 hover:bg-green-100 hover:text-green-500 duration-300">
+              <FaFacebookF className="mx-auto" />
+            </div>
+            <div className="icon-circle  w-7 rounded-full h-7 items-center justify-center flex bg-gray-200 hover:bg-green-100 hover:text-green-500 duration-300">
+              <FaInstagram className="mx-auto" />
+            </div>
+            <div className="icon-circle  w-7 rounded-full h-7 items-center justify-center flex bg-gray-200 hover:bg-green-100 hover:text-green-500 duration-300">
+              <FaLinkedinIn className="mx-auto" />
+            </div>
+            <div className="icon-circle  w-7 rounded-full h-7 items-center justify-center flex bg-gray-200 hover:bg-green-100 hover:text-green-500 duration-300">
+              <FaTwitter className="mx-auto" />
             </div>
           </div>
-        </div>
-        <div className="footer-col-4 flex flex-col items-start xl:items-center gap-3">
-          <p className="uppercase tracking-wider text-gray-500">
-            Need more informations?
-          </p>
-          <button className="footer-btn py-4 px-6 rounded-full uppercase text-sm font-medium text-green-500 bg-green-100 duration-300 hover:bg-green-500 hover:text-gray-50">
-            + Contact Us
-          </button>
         </div>
       </div>
+      <div className="copyright container mx-auto text-sm sm:text-lg py-6 flex gap-5 justify-between">
+        <p className="hover:text-green-500 duration-300">
+          {" "}
+          &copy; {new Date().getFullYear()} Divine-Beauty
+        </p>
+        <div className="flex gap-5">
+          <Link href="" className="hover:text-green-500 duration-300">
+            Privacy Policy
+          </Link>
 
-      <p className="copyright  border-gray-500/40  text-gray-400  text-center uppercase">
-        &copy; {new Date().getFullYear()} Divine-Beauty All rights reserved.
-      </p>
+          <Link href="" className="hover:text-green-500 duration-300">
+            Terms of Service
+          </Link>
+        </div>
+      </div>
     </footer>
   );
 };
