@@ -20,7 +20,7 @@ const Navbar = () => {
   };
   return (
     <div className="bg-white fixed top-0 left-0 right-0 z-[989]">
-      <div className="mx-auto px-4 sm:container sm:px-0">
+      <div className="wrapper">
         <div className="flex items-center justify-between h-20">
           <div className="flex items-center">
             <Link
