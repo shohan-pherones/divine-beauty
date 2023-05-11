@@ -1,7 +1,7 @@
 import { getAllPackages } from "@/prisma/packages";
 
 const Packages = ({ packages }) => {
-  return <div>Packages</div>;
+  return <div className="mt-20 wrapper"></div>;
 };
 
 export default Packages;

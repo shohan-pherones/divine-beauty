@@ -4,9 +4,9 @@ import { useState } from "react";
 
 const navLilnks = [
   { id: 1, title: "Home", link: "/" },
-  { id: 2, title: "About", link: "" },
-  { id: 3, title: "Packages", link: "" },
-  { id: 4, title: "Contact", link: "" },
+  { id: 2, title: "Packages", link: "/packages" },
+  { id: 3, title: "About", link: "/about" },
+  { id: 4, title: "Contact", link: "/contact" },
 ];
 
 const Navbar = () => {
