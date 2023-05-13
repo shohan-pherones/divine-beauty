@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const Hero = () => {
   return (
-    <div className="hero-section relative h-[calc(100vh-5rem)] overflow-hidden bg-[#ece8e0]">
+    <div className="hero-section mt-20 relative h-[calc(100vh-5rem)] overflow-hidden bg-[#ece8e0]">
       <div className="detals w-44 xl:w-[850px]  absolute left-[200px] top-28  md:top-40 xl:left-[580px] lg:w-[600px]  lg:left-[300px] md:w-[300px] md:left-72">
         <h1 className=" text-xl  xl:text-8xl font-[400]  leading-tight  lg:text-6xl lg:leading-tight md:text-4xl md:leading-tight ">
           Grow up your skin with the power of natural product.
