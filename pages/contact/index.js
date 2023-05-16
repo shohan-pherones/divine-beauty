@@ -16,9 +16,9 @@ const ContactPage = () => {
   const [message, setMessage] = useState("");
 
   function handleFromData(e) {
-    const service_id = process.env.SERVICE_ID || "service_vws1ni2";
-    const template_id = process.env.TEMPLATE_ID || "template_c358gi7";
-    const public_key = process.env.PUBLIC_KEY || "zGEImd1SMam0-1Qc6";
+    const service_id = process.env.SERVICE_ID;
+    const template_id = process.env.TEMPLATE_ID;
+    const public_key = process.env.PUBLIC_KEY;
     e.preventDefault();
 
     emailjs.send(
