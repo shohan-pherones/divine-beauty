@@ -16,18 +16,20 @@ const ContactPage = () => {
   const [message, setMessage] = useState("");
 
   function handleFromData(e) {
+    const service_id = process.env.SERVICE_ID || "service_vws1ni2";
+    const template_id = process.env.TEMPLATE_ID || "template_c358gi7";
+    const public_key = process.env.PUBLIC_KEY || "zGEImd1SMam0-1Qc6";
     e.preventDefault();
 
     emailjs.send(
-      "service_vws1ni2",
-      "template_c358gi7",
+      service_id,
+      template_id,
       {
         name,
         email,
-
         message,
       },
-      "zGEImd1SMam0-1Qc6"
+      public_key
     );
     toast.success("Sent Successfully", {
       position: "bottom-left",
@@ -91,11 +93,13 @@ const ContactPage = () => {
                 onChange={(e) => setMessage(e.target.value)}
                 className="border border-green-600 rounded-sm py-2 px-2 focus:outline-1 focus:outline-green-600"
               />
-              <input
+
+              <button
                 type="submit"
-                value="send"
                 className="bg-green-500 text-green-50 uppercase py-2 mt-4 rounded-md "
-              />
+              >
+                send
+              </button>
             </form>
           </div>
 
