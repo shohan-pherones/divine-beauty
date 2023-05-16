@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@prisma/client": "^4.13.0",
+    "emailjs-com": "^3.2.0",
     "eslint": "8.39.0",
     "eslint-config-next": "13.3.1",
     "icons": "^1.0.0",
