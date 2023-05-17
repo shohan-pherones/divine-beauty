@@ -16,20 +16,20 @@ const ContactPage = () => {
   const [message, setMessage] = useState("");
 
   function handleFromData(e) {
-    const service_id = process.env.SERVICE_ID;
-    const template_id = process.env.TEMPLATE_ID;
-    const public_key = process.env.PUBLIC_KEY;
+    const serviceId = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID;
+    const templateId = process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID;
+    const publicKey = process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY;
     e.preventDefault();
 
     emailjs.send(
-      service_id,
-      template_id,
+      serviceId,
+      templateId,
       {
         name,
         email,
         message,
       },
-      public_key
+      publicKey
     );
     toast.success("Sent Successfully", {
       position: "bottom-left",
