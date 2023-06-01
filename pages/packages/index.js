@@ -2,7 +2,6 @@ import PackageItem from "@/components/PackageItem";
 import { getAllPackages } from "@/prisma/packages";
 
 const Packages = ({ packages }) => {
-  console.log(packages);
   return (
     <div className="packages mt-24 wrapper">
       <h1 className="text-4xl text-green-500/60 text-center font-semibold ">

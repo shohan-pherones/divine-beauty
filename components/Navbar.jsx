@@ -19,7 +19,7 @@ const Navbar = () => {
     setOpen(false);
   };
   return (
-    <div className="bg-white fixed top-0 left-0 right-0 z-[989]">
+    <div className={`bg-white fixed top-0 left-0 right-0 z-[989] `}>
       <div className="wrapper">
         <div className="flex items-center justify-between h-20">
           <div className="flex items-center">
@@ -27,7 +27,7 @@ const Navbar = () => {
               href="/"
               className="text-xl lg:text-xl font-medium text-green-500 hover:text-green-600/80 duration-300"
             >
-              Divine-Beauty
+              Divine Beauty
             </Link>
           </div>
           {/* navlinks */}
@@ -45,8 +45,8 @@ const Navbar = () => {
             </div>
           </div>
           <Link
-            href=""
-            className="hidden md:block lg:text-lg py-3 px-7 rounded-2xl uppercase text-sm  text-green-500 bg-green-100 duration-300 hover:bg-green-500 hover:text-gray-50"
+            href="/user/login"
+            className="hidden md:block py-2 px-6 rounded-2xl uppercase text-sm  text-green-500 bg-green-100 duration-300 hover:bg-green-500 hover:text-gray-50"
           >
             Sign in
           </Link>
@@ -68,7 +68,7 @@ const Navbar = () => {
         <div className="md:hidden">
           <div
             onClick={handleOpen}
-            className={`w-screen h-screen fixed z-[900] bg-green-100/50 backdrop-blur-lg top-0 left-0 right-0 bottom-0 flex justify-center items-center ${
+            className={`w-screen h-screen fixed z-[900] bg-green-100/50 backdrop-blur-lg top-0 left-0 right-0 bottom-0 flex justify-center items-center  ${
               setOpen ? `` : "hidden"
             }`}
           >
@@ -83,8 +83,8 @@ const Navbar = () => {
                 </Link>
               ))}
               <Link
-                href=""
-                className="lg:text-lg py-3 px-7 rounded-2xl uppercase  text-green-500 bg-white duration-300 hover:bg-green-500 hover:text-gray-50 text-lg"
+                href="/user/login"
+                className="py-2 px-6 rounded-2xl uppercase  text-green-500 bg-white duration-300 hover:bg-green-500 hover:text-gray-50 "
               >
                 Sign in
               </Link>

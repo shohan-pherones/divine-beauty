@@ -10,3 +10,6 @@
 .line {
   @apply w-24 h-1 rounded-xl bg-green-300/50;
 }
+.whyDivineBeauty::after {
+  @apply absolute content-[''] w-[65%] h-[100%] top-0 left-0 z-[-2] bg-white hidden md:block;
+}
