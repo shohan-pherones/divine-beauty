@@ -12,7 +12,7 @@ const Footer = () => {
       <div className="wrapper mx-auto grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8 border-b border-gray-400/50 pb-10">
         <div className="footer-col-1 col-span-2 gap-3 sm:gap-5 flex flex-col">
           <p className="text-xl text-gray-600 font-medium hover:text-green-500 duration-300">
-            Divine-Beauty
+            Divine Beauty
           </p>
           <p>
             Our beauty parlor offers exceptional services tailored to your
