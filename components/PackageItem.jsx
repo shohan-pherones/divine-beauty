@@ -27,9 +27,7 @@ const PackageItem = ({ pkg }) => {
             </span>
           </div>
           <div className="">
-            <p className="text-lg mb-2">
-              {pkg.description.substring(0, 120)}...
-            </p>
+            <p className="text-lg mb-2">{pkg.description}...</p>
             <span className="text-green-500/60 cursor-pointer">{pkg.tags}</span>
           </div>
           <Link

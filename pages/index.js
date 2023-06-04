@@ -1,13 +1,34 @@
 import { EcoFriendly } from "@/components/EcoFriendly";
 import Hero from "@/components/Hero";
 
-const HomePage = () => {
+import { getAllPackages } from "@/prisma/packages";
+import PackageItem from "@/components/PackageItem";
+import PackagesSection from "@/components/PackagesSection";
+
+const HomePage = ({ packages }) => {
   return (
     <div>
       <Hero />
+      <PackagesSection packages={packages} />
       <EcoFriendly />
     </div>
   );
 };
 
 export default HomePage;
+
+export const getStaticProps = async () => {
+  const packages = await getAllPackages();
+
+  const updatedPackages = packages.map((pkg) => ({
+    ...pkg,
+    updatedAt: pkg.updatedAt.toString(),
+    createdAt: pkg.createdAt.toString(),
+  }));
+
+  return {
+    props: {
+      packages: updatedPackages,
+    },
+  };
+};
