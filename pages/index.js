@@ -1,3 +1,4 @@
+import { EcoFriendly } from "@/components/EcoFriendly";
 import Hero from "@/components/Hero";
 
 import { getAllPackages } from "@/prisma/packages";
@@ -9,6 +10,7 @@ const HomePage = ({ packages }) => {
     <div>
       <Hero />
       <PackagesSection packages={packages} />
+      <EcoFriendly />
     </div>
   );
 };
