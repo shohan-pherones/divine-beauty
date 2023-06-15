@@ -45,7 +45,7 @@ const Navbar = () => {
             </div>
           </div>
           <Link
-            href="/user/login"
+            href="/users/login"
             className="hidden md:block py-2 px-6 rounded-2xl uppercase text-sm  text-green-500 bg-green-100 duration-300 hover:bg-green-500 hover:text-gray-50"
           >
             Sign in
@@ -83,7 +83,7 @@ const Navbar = () => {
                 </Link>
               ))}
               <Link
-                href="/user/login"
+                href="/users/login"
                 className="py-2 px-6 rounded-2xl uppercase  text-green-500 bg-white duration-300 hover:bg-green-500 hover:text-gray-50 "
               >
                 Sign in
